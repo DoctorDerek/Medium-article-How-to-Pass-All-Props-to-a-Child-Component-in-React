@@ -1,12 +1,12 @@
 import React from "react"
 import "./styles.css"
-import ChildComponent from "./ChildComponent"
+import ParentComponent from "./ParentComponent"
 
 const App = () => (
   <div className="App">
-    <ChildComponent name="Johnny" job="👨‍🎤">
+    <ParentComponent name="Johnny" job="👨‍🎤">
       🌟
-    </ChildComponent>
+    </ParentComponent>
   </div>
 )
 

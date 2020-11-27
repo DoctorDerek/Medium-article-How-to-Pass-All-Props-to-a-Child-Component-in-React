@@ -1,14 +1,12 @@
 import React from "react"
 
 import DisplayAllProps from "./DisplayAllProps"
-import GrandChild from "./GrandChild"
 
 const ChildComponent = (props) => (
-  <section>
-    <h1>ChildComponent's props:</h1>
+  <React.Fragment>
+    <h1>GrandChild's props:</h1>
     <DisplayAllProps {...props}></DisplayAllProps>
-    <GrandChild {...props}></GrandChild>
-  </section>
+  </React.Fragment>
 )
 
 export default ChildComponent
