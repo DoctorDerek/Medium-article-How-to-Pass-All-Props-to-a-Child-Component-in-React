@@ -1,2 +1,2 @@
-# Medium-article-How-to-Pass-All-Props-to-a-Child-Component-in-React
+# how-to-pass-all-react-props-from-parent-to-child
 Created with CodeSandbox
