@@ -1,13 +1,13 @@
 import React from "react"
 
 import DisplayAllProps from "./DisplayAllProps"
-import GrandChild from "./ChildComponent"
+import ChildComponent from "./ChildComponent"
 
 const ParentComponent = (props) => (
   <section>
-    <h1>ChildComponent's props:</h1>
+    <h1>ParentComponent's props:</h1>
     <DisplayAllProps {...props}></DisplayAllProps>
-    <GrandChild {...props}></GrandChild>
+    <ChildComponent {...props}></ChildComponent>
   </section>
 )
 

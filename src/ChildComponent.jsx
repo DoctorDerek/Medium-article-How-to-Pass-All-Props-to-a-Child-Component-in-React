@@ -4,7 +4,7 @@ import DisplayAllProps from "./DisplayAllProps"
 
 const ChildComponent = (props) => (
   <React.Fragment>
-    <h1>GrandChild's props:</h1>
+    <h1>ChildComponent's props:</h1>
     <DisplayAllProps {...props}></DisplayAllProps>
   </React.Fragment>
 )
