@@ -3,7 +3,7 @@ import React from "react"
 import DisplayAllProps from "./DisplayAllProps"
 import ChildComponent from "./ChildComponent"
 
-const ParentComponentNoSpread = (props) => (
+const ParentComponent = (props) => (
   <section>
     <h1>ParentComponent's props:</h1>
     <DisplayAllProps
@@ -11,11 +11,10 @@ const ParentComponentNoSpread = (props) => (
       job={props.job}
       children={props.children}
     ></DisplayAllProps>
-    <ChildComponent
-      name={props.name}
-      job={props.job}
-      children={props.children}
-    ></ChildComponent>
+    {/* Both methods to pass children are equivalent */}
+    <ChildComponent name={props.name} job={props.job}>
+      {props.children}
+    </ChildComponent>
   </section>
 )
 
